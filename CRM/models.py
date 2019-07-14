@@ -3,7 +3,7 @@ from django.contrib.auth.models import User    #自带加密验证
 
 # Create your models here.
 class Customer(models.Model):
-    #客户表
+
     name=models.CharField(max_length=32,blank=True,null=True)
     qq=models.CharField(max_length=64,unique=True)
     qq_name=models.CharField(max_length=64,blank=True,null=True)
@@ -12,13 +12,19 @@ class Customer(models.Model):
     source=models.SmallIntegerField(choices=source_choices)
     referral_from=models.CharField(verbose_name='转介绍人QQ',max_length=64,blank=True,null=True)
     consult_course=models.ForeignKey('Course',verbose_name='咨询课程')
+
     content=models.TextField(verbose_name='内容')
+
+
+
     tags=models.ManyToManyField('Tag',blank=True,null=True)
     consultant=models.ForeignKey('UserProfile')    #课程顾问
     memo=models.TextField(blank=True,null=True)      #备注
     date=models.DateTimeField(auto_now_add=True)
     def __str__(self):
+
         return self.name
+
     class Meta:   #表名中文显示（admin系统中）
         verbose_name='客户表'
         verbose_name_plural='客户表'
@@ -34,9 +40,11 @@ class Tag(models.Model):
 
 class CustomerFollowUp(models.Model):
     #客户跟进表
+
     customer=models.ForeignKey('Customer',verbose_name='潜在学员')
     content=models.TextField(verbose_name='跟进内容')
     consultant=models.ForeignKey('UserProfile',verbose_name='跟进人')    #跟进人
+
 
     intention_choices=((0,'2周内报名'),
                        (1,'一个月内报名'),
@@ -45,8 +53,10 @@ class CustomerFollowUp(models.Model):
                        (4,'已报名'),
                        (5,'已拉黑'),
                        )
+
     intention=models.SmallIntegerField(choices=intention_choices,verbose_name='跟进结果')
     date = models.DateTimeField(auto_now_add=True,verbose_name='跟进日期')
+
 
     def __str__(self):
         return "<%s : %s>"%(self.customer.qq,self.intention)
@@ -135,8 +145,10 @@ class StudyRecord(models.Model):
 
 class Enrollment(models.Model):
     #报名表
+
     customer=models.ForeignKey('Customer')       #报名客户
     enrolled_class=models.ForeignKey('Classlist',verbose_name='所报班级')    #包含了课程
+
     consultant=models.ForeignKey('UserProfile',verbose_name='课程顾问')
     contract_agreed=models.BooleanField(default=False,verbose_name='学员已同意条款')
     contract_approved=models.BooleanField(default=False,verbose_name='合同已审核')
