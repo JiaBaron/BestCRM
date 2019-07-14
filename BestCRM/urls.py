@@ -22,7 +22,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'CRM/' ,include('CRM.urls')),
     url(r'student/',include('student.urls')),
+
     url('^$',index),
+    url('king_admin/',include('king_admin.urls'))
 
 
 ]
