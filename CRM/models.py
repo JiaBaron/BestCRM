@@ -12,7 +12,8 @@ class Customer(models.Model):
     source=models.SmallIntegerField(choices=source_choices)
     referral_from=models.CharField(verbose_name='转介绍人QQ',max_length=64,blank=True,null=True)
     consult_course=models.ForeignKey('Course',verbose_name='咨询课程')
-
+    status_choice=((0,'未报名'),(1,'已报名'))
+    status=models.SmallIntegerField(choices=status_choice,default=0)
     content=models.TextField(verbose_name='内容')
 
 
@@ -89,12 +90,12 @@ class Branch(models.Model):
 
 class Classlist(models.Model):
     #班级表
-    branch=models.ForeignKey('Branch')
-    course=models.ForeignKey('Course')
+    branch=models.ForeignKey('Branch',verbose_name='校区')
+    course=models.ForeignKey('Course',verbose_name='课程')
     calss_type_choices=((0,'面授'),(1,'面授(周末)'),(2,'网络班'))
-    class_type=models.SmallIntegerField(choices=calss_type_choices)
+    class_type=models.SmallIntegerField(choices=calss_type_choices,verbose_name='授课方式')
     semester=models.PositiveSmallIntegerField(verbose_name='学期')
-    teachers=models.ManyToManyField('UserProfile')
+    teachers=models.ManyToManyField('UserProfile',verbose_name='讲师')
     start_date=models.DateField(verbose_name='开班日期')
     end_date=models.DateField(verbose_name='结业日期',blank=True,null=True)
 
@@ -109,8 +110,8 @@ class CourseRecord(models.Model):
     #上课记录表
     from_class=models.ForeignKey('Classlist',verbose_name='班级')
     day_num=models.PositiveSmallIntegerField(verbose_name='第几节（天）')
-    teacher=models.ForeignKey('UserProfile')
-    has_homework=models.BooleanField(default=True)
+    teacher=models.ForeignKey('UserProfile',verbose_name='讲师')
+    has_homework=models.BooleanField(default=True,verbose_name='有无作业')
     homework_title=models.CharField(max_length=128,blank=True,null=True)
     homework_content=models.TextField(blank=True,null=True)
     outline=models.TextField(verbose_name='本节课程大纲')
@@ -137,7 +138,7 @@ class StudyRecord(models.Model):
     date=models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return '%s %s %s' %(self.student,self.course_record,self.score)
+        return '%s' %(self.student)
     class Meta:   #表名中文显示（admin系统中）
         unique_together=('student','course_record')
         # verbose_name='学习记录表'
@@ -152,10 +153,10 @@ class Enrollment(models.Model):
     consultant=models.ForeignKey('UserProfile',verbose_name='课程顾问')
     contract_agreed=models.BooleanField(default=False,verbose_name='学员已同意条款')
     contract_approved=models.BooleanField(default=False,verbose_name='合同已审核')
-    date=models.DateTimeField(auto_now_add=True)
+    date=models.DateTimeField(auto_now_add=True,verbose_name='报名日期')
 
     def __str__(self):
-        return '%s %s' %(self.customer,self.enrolled_class)
+        return '%s' %(self.customer)
     class Meta:
         unique_together=('customer','enrolled_class')
         # verbose_name='报名表'
