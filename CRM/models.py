@@ -62,8 +62,8 @@ class CustomerFollowUp(models.Model):
     def __str__(self):
         return "<%s : %s>"%(self.customer.qq,self.intention)
     class Meta:   #表名中文显示（admin系统中）
-        # verbose_name='客户跟进表'
-        verbose_name_plural='客户跟进记录'
+        verbose_name='客户跟进表'
+        verbose_name_plural='客户跟进表'
 
 class Course(models.Model):
     #课程表
