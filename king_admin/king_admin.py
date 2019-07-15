@@ -11,11 +11,11 @@ class BaseAdmin(object):                 #基类      仿写Admin中自定义格
 
 class CustomerAdmin(BaseAdmin):
     list_display = ['name','qq','source','status','date']
-    list_fliter = ['source']
+    list_fliter = ['source','status']
 
 class CustomerFollowUpAdmin(BaseAdmin):
     list_display = ['customer','consultant']
-
+    list_fliter = ['customer']
 
 def register(model_class,admin_class=None):
     if model_class._meta.app_label not in enabled_admins:

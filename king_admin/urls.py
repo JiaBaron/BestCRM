@@ -6,5 +6,7 @@ urlpatterns = [
 
 
     url('table_index/',table,name='table_index'),
-    url(r'(\w+)/(\w+)/',table_objs,name='table_objs')
+    url(r'(\w+)/(\w+)/',table_objs,name='table_objs'),
+    url('login/',css_login,name='login'),
+    url('logout/',css_logout,name='logout'),
 ]

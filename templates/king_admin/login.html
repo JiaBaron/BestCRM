@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <style>
+    #forms{
+        {#background-color: #5bc0de;#}
+        width: 400px;
+        height:200px;
+        float: left;
+        {#background-image: url("/static/images/1.jpg");#}
+        {#background-repeat: no-repeat;#}
+
+    }
+    form{
+        float: left;
+    }
+    #username{
+        width: 400px;
+        margin-top: 20px;
+
+    }
+    #password{
+        width: 400px;
+        margin-top: 20px;
+
+
+    }
+    #sumit{
+        width: 400px;
+        margin-top: 20px;
+
+
+    }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+<div id="forms">
+        </div>
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    <input type="text" name="username" id="username" class="form-group form-control" placeholder="用户名">
+    <input type="password" name="password" id="password" class="form-group form-control" placeholder="密码">
+    <input type="submit" class="btn-success btn-block" id="sumit">
+
+</form>
+
+{% endblock %}
