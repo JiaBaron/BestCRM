@@ -26,7 +26,7 @@ def css_login(request):
         user=authenticate(username=username,password=password)
         if user:
             login(request,user)
-            return redirect('/king_admin/table_index/')
+            return redirect('/')
     return render(request,'king_admin/login.html')
 
 def css_logout(request):
