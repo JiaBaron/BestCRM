@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db6d827a-5f0d-4259-aeae-32f173321417" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/king_admin/table_objs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/king_admin/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/king_admin/king_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/king_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/king_admin/templatetags/tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/templatetags/tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/king_admin/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/king_admin/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/king_admin/table_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/king_admin/table_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/king_admin/table_objs.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/king_admin/table_objs.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BestCRM/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            <state relative-caret-position="401">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
               <folding>
                 <element signature="e#641#681#0" expanded="true" />
               </folding>
@@ -65,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/king_admin/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="270">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#1#33#0" expanded="true" />
               </folding>
@@ -74,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/king_admin/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+            <state relative-caret-position="198">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -86,11 +86,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/king_admin/table_objs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-100">
-              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            <state relative-caret-position="-139">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/king_admin/king_admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/king_admin/table_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+            <state relative-caret-position="27">
+              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -109,39 +121,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="16" lean-forward="true" selection-end-line="90" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/king_admin/templatetags/tags.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/king_admin/king_admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+            <state relative-caret-position="621">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CRM/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1296">
-              <caret line="65" column="35" lean-forward="true" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+            <state relative-caret-position="81">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -184,7 +169,6 @@
         <option value="$PROJECT_DIR$/crm/models.py" />
         <option value="$PROJECT_DIR$/BestCRM/__init__.py" />
         <option value="$PROJECT_DIR$/crm/admin.py" />
-        <option value="$PROJECT_DIR$/templates/student/student.html" />
         <option value="$PROJECT_DIR$/templates/customer/customer.html" />
         <option value="$PROJECT_DIR$/templates/sell/sell.html" />
         <option value="$PROJECT_DIR$/CRM/views.py" />
@@ -195,14 +179,15 @@
         <option value="$PROJECT_DIR$/CRM/admin.py" />
         <option value="$PROJECT_DIR$/BestCRM/settings.py" />
         <option value="$PROJECT_DIR$/BestCRM/urls.py" />
-        <option value="$PROJECT_DIR$/king_admin/king_admin.py" />
-        <option value="$PROJECT_DIR$/king_admin/templatetags/tags.py" />
         <option value="$PROJECT_DIR$/CRM/models.py" />
-        <option value="$PROJECT_DIR$/templates/king_admin/table_index.html" />
         <option value="$PROJECT_DIR$/king_admin/urls.py" />
-        <option value="$PROJECT_DIR$/king_admin/views.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/king_admin/views.py" />
+        <option value="$PROJECT_DIR$/templates/student/student.html" />
+        <option value="$PROJECT_DIR$/templates/king_admin/table_index.html" />
         <option value="$PROJECT_DIR$/templates/king_admin/table_objs.html" />
+        <option value="$PROJECT_DIR$/king_admin/templatetags/tags.py" />
+        <option value="$PROJECT_DIR$/king_admin/king_admin.py" />
       </list>
     </option>
   </component>
@@ -234,12 +219,29 @@
             <path>
               <item name="BestCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="BestCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="CRM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestCRM" type="462c0819:PsiDirectoryNode" />
               <item name="king_admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BestCRM" type="b2602c69:ProjectViewProjectNode" />
               <item name="BestCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="king_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestCRM" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BestCRM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BestCRM" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="king_admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -325,6 +327,7 @@
       <updated>1562980655994</updated>
       <workItem from="1562980658108" duration="41240000" />
       <workItem from="1563070029602" duration="6947000" />
+      <workItem from="1563150103655" duration="9297000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/JiaBaron/BestCRM&#10;&#10;# Conflicts:&#10;#&#9;BestCRM/__pycache__/settings.cpython-36.pyc&#10;#&#9;BestCRM/settings.py&#10;#&#9;CRM/__pycache__/admin.cpython-36.pyc&#10;#&#9;CRM/__pycache__/models.cpython-36.pyc&#10;#&#9;CRM/__pycache__/urls.cpython-36.pyc&#10;#&#9;CRM/admin.py&#10;#&#9;CRM/models.py&#10;#&#9;CRM/urls.py">
       <created>1563087209690</created>
@@ -354,23 +357,36 @@
       <option name="project" value="LOCAL" />
       <updated>1563109744622</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="初步渲染了前端">
+      <created>1563118968249</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563118968249</updated>
+    </task>
+    <task id="LOCAL-00006" summary="初步渲染了前端">
+      <created>1563119410429</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563119410429</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69397000" />
+    <option name="totallyTimeSpent" value="79180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22541603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="SVN Repositories" weight="0.5040917" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3288364" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.5786885" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.21147542" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -382,6 +398,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" weight="0.29016393" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.3590164" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3288364" />
+      <window_info anchor="bottom" id="SVN Repositories" order="14" weight="0.5040917" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -413,6 +430,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -501,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/student.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/sell/sell.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -566,16 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BestCRM/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <element signature="e#641#681#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BestCRM/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -590,37 +604,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/king_admin/templatetags/tags.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="54">
+          <caret line="2" column="16" selection-end-line="90" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CRM/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1296">
-          <caret line="65" column="35" lean-forward="true" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        <state relative-caret-position="297">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/king_admin/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BestCRM/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#641#681#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/king_admin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#1#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/king_admin/table_objs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-139">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/king_admin/templatetags/tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CRM/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/king_admin/king_admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        <state relative-caret-position="-18">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -629,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/king_admin/table_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        <state relative-caret-position="27">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -638,34 +696,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="16" lean-forward="true" selection-end-line="90" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/king_admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
+        <state relative-caret-position="198">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/king_admin/table_objs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
         </state>
       </provider>
     </entry>

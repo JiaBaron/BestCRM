@@ -10,7 +10,10 @@ def table(request):
 
 def table_objs(request,app_name,table_name):
     print('--->',app_name,table_name)
+
+    # print(king_admin.enabled_admins)
     # models_module=importlib.import_module('%s.models'%(app_name))
     # model_obj=getattr(models_module,table_name)
+
     admin_class=king_admin.enabled_admins[app_name][table_name]
     return render(request,'king_admin/table_objs.html',{'admin_class':admin_class})
